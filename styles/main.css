@@ -105,6 +105,31 @@ body {
     overflow: hidden;
 }
 
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--gray-700);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.back-button:hover {
+    background: var(--nexgent-primary);
+    color: var(--white);
+    border-color: var(--nexgent-primary);
+    transform: translateX(-4px);
+}
+
 .executive-header::before {
     content: '';
     position: absolute;
