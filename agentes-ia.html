@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloNails × NexGent AI - Propuesta de Colaboración</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header Profesional -->
+    <header class="executive-header">
+        <div class="header-main">
+            <!-- Central Content -->
+            <div class="central-content">
+                <div class="proposal-badge">
+                    <div class="badge-dot"></div>
+                    <span>Propuesta de Colaboración</span>
+                </div>
+                <h1 class="main-title">
+                    HelloNails <span class="title-highlight">× NexGent AI</span>
+                </h1>
+                <p class="partnership-subtitle">Transformación digital inteligente para el sector de la belleza</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Resumen Ejecutivo -->
+        <section class="executive-summary">
+            <div class="container">
+                <h2 class="section-title">Resumen Ejecutivo</h2>
+                <div class="summary-grid">
+                    <div class="summary-card network">
+                        <div class="card-icon"><i class="fas fa-store"></i></div>
+                        <div class="metric-large">190</div>
+                        <h3 class="metric-title">Tiendas HelloNails</h3>
+                        <p class="metric-description">20 propias + 170 franquicias</p>
+                        <div class="metric-detail">Red consolidada en expansión</div>
+                    </div>
+                    
+                    <div class="summary-card revenue">
+                        <div class="card-icon"><i class="fas fa-euro-sign"></i></div>
+                        <div class="metric-large">122.400€</div>
+                        <h3 class="metric-title">Potencial Anual</h3>
+                        <p class="metric-description">Ingresos por comisiones estimados</p>
+                        <div class="metric-detail">Basado en 170 franquicias activas</div>
+                    </div>
+                    
+                    <div class="summary-card margin">
+                        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="metric-large">30%</div>
+                        <h3 class="metric-title">Comisión Máxima</h3>
+                        <p class="metric-description">Primer año con incentivo</p>
+                        <div class="metric-detail">25% máximo a partir del año 2</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estructura de Precios -->
+        <section class="pricing-structure">
+            <div class="container">
+                <h2 class="section-title">Estructura de Precios</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card own-stores">
+                        <div class="pricing-header">
+                            <h3>Tiendas Propias</h3>
+                            <div class="store-badge">20 tiendas</div>
+                        </div>
+                        <div class="pricing-content">
+                            <div class="price-display">
+                                <div class="price-main">150€<span>/mes</span></div>
+                                <div class="price-original">200€/mes</div>
+                                <div class="price-savings">50€ de descuento exclusivo</div>
+                            </div>
+                            <div class="pricing-features">
+                                <div class="feature"><i class="fas fa-check"></i> IA especializada en belleza</div>
+                                <div class="feature"><i class="fas fa-check"></i> Soporte prioritario</div>
+                                <div class="feature"><i class="fas fa-check"></i> Actualizaciones gratuitas</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card franchises">
+                        <div class="pricing-header">
+                            <h3>Franquicias</h3>
+                            <div class="store-badge">170 tiendas</div>
+                        </div>
+                        <div class="pricing-content">
+                            <div class="price-display">
+                                <div class="price-main">200€<span>/mes</span></div>
+                                <div class="commission-info">+ Comisión para HelloNails</div>
+                            </div>
+                            <div class="pricing-features">
+                                <div class="feature"><i class="fas fa-check"></i> Modelo escalable</div>
+                                <div class="feature"><i class="fas fa-check"></i> Comisiones crecientes</div>
+                                <div class="feature"><i class="fas fa-check"></i> Ingresos pasivos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modelo de Comisiones -->
+        <section class="commission-charts">
+            <div class="container">
+                <h2 class="section-title">Modelo de Comisiones Escalables</h2>
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h3>Evolución de Comisiones</h3>
+                        <canvas id="commissionChart"></canvas>
+                    </div>
+                    
+                    <div class="commission-table-modern">
+                        <div class="table-row header">
+                            <div>Franquicias</div>
+                            <div>Año 1</div>
+                            <div>Año 2+</div>
+                            <div>Incentivo</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="franchise-range">1-50</div>
+                            <div class="commission-rate">15%</div>
+                            <div class="commission-rate">10%</div>
+                            <div class="incentive-badge">+5%</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="franchise-range">51-100</div>
+                            <div class="commission-rate">20%</div>
+                            <div class="commission-rate">15%</div>
+                            <div class="incentive-badge">+5%</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="franchise-range">101-150</div>
+                            <div class="commission-rate">25%</div>
+                            <div class="commission-rate">20%</div>
+                            <div class="incentive-badge">+5%</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="franchise-range">151-170</div>
+                            <div class="commission-rate">30%</div>
+                            <div class="commission-rate">25%</div>
+                            <div class="incentive-badge">+5%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyección de Ingresos -->
+        <section class="revenue-projection">
+            <div class="container">
+                <h2 class="section-title">Proyección de Ingresos HelloNails</h2>
+                
+                <!-- Gráfica Principal -->
+                <div class="chart-section">
+                    <div class="chart-container-large">
+                        <h3>Evolución de Ingresos Anuales</h3>
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- Métricas Clave -->
+                <div class="metrics-grid">
+                    <div class="metric-card-compact">
+                        <div class="metric-header">25 Franquicias</div>
+                        <div class="metric-amount">10.000€</div>
+                        <div class="metric-subtitle">833€/mes (15%)</div>
+                    </div>
+                    
+                    <div class="metric-card-compact">
+                        <div class="metric-header">50 Franquicias</div>
+                        <div class="metric-amount">20.000€</div>
+                        <div class="metric-subtitle">1.667€/mes (15%)</div>
+                    </div>
+                    
+                    <div class="metric-card-compact">
+                        <div class="metric-header">100 Franquicias</div>
+                        <div class="metric-amount">50.000€</div>
+                        <div class="metric-subtitle">4.167€/mes (20%)</div>
+                    </div>
+                    
+                    <div class="metric-card-compact featured">
+                        <div class="metric-header">170 Franquicias</div>
+                        <div class="metric-amount">122.400€</div>
+                        <div class="metric-subtitle">10.200€/mes (30%)</div>
+                    </div>
+                </div>
+                
+                <!-- Calculadora Interactiva -->
+                <div class="calculator-section">
+                    <h3>Calculadora ROI Interactiva</h3>
+                    <div class="calculator-content">
+                        <div class="slider-section">
+                            <label class="slider-label">Número de Franquicias Activas</label>
+                            <input type="range" min="1" max="170" value="100" class="franchise-slider" id="franchiseSlider">
+                            <div class="franchise-count-display" id="franchiseCount">100</div>
+                        </div>
+                        
+                        <div class="results-section">
+                            <div class="result-card year1">
+                                <div class="result-title">Ingresos Año 1</div>
+                                <div class="result-amount" id="year1Amount">48.000€</div>
+                                <div class="result-subtitle">Con incentivo 5%</div>
+                            </div>
+                            
+                            <div class="result-card year2">
+                                <div class="result-title">Ingresos Año 2+</div>
+                                <div class="result-amount" id="year2Amount">36.000€</div>
+                                <div class="result-subtitle">Sin incentivo (max 25%)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ventajas del Acuerdo -->
+        <section class="key-advantages">
+            <div class="container">
+                <h2 class="section-title">Ventajas del Acuerdo</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon"><i class="fas fa-coins"></i></div>
+                        <h4>Ingresos Pasivos Inmediatos</h4>
+                        <p>Genera ingresos desde el primer mes sin inversión inicial ni riesgo operativo.</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h4>Escalabilidad Automática</h4>
+                        <p>Los ingresos crecen automáticamente con tu red de franquicias sin esfuerzo adicional.</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon"><i class="fas fa-bullseye"></i></div>
+                        <h4>Sin Inversión Inicial</h4>
+                        <p>Modelo de riesgo cero para HelloNails. Solo generas ingresos cuando tus franquicias lo hacen.</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon"><i class="fas fa-rocket"></i></div>
+                        <h4>Tecnología Especializada</h4>
+                        <p>IA específicamente desarrollada para el sector de la belleza y cuidado de uñas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/main.js"></script>
+    
+    <!-- CALCULADORA DIRECTA - SOLUCIÓN INMEDIATA -->
+    <script>
+        console.log('🔥 SCRIPT DIRECTO CARGADO');
+        
+        // Función que se ejecuta inmediatamente
+        function activarCalculadoraDirecta() {
+            console.log('🚀 Activando calculadora directa...');
+            
+            const slider = document.getElementById('franchiseSlider');
+            const contador = document.getElementById('franchiseCount');
+            const ano1 = document.getElementById('year1Amount');
+            const ano2 = document.getElementById('year2Amount');
+            
+            console.log('Elementos:', { slider, contador, ano1, ano2 });
+            
+            if (!slider || !contador || !ano1 || !ano2) {
+                console.error('❌ Elementos no encontrados');
+                return;
+            }
+            
+            console.log('✅ Todos los elementos encontrados');
+            
+            function calcular() {
+                const franquicias = parseInt(slider.value);
+                console.log(`🔢 Calculando para ${franquicias} franquicias`);
+                
+                // Actualizar contador
+                contador.textContent = franquicias;
+                
+                // Actualizar color del slider
+                const porcentaje = ((franquicias - 1) / 169) * 100;
+                slider.style.background = `linear-gradient(to right, #e91e63 ${porcentaje}%, #e9ecef ${porcentaje}%)`;
+                
+                // Calcular comisiones
+                let comision1, comision2;
+                if (franquicias <= 50) {
+                    comision1 = 15; comision2 = 10;
+                } else if (franquicias <= 100) {
+                    comision1 = 20; comision2 = 15;
+                } else if (franquicias <= 150) {
+                    comision1 = 25; comision2 = 20;
+                } else if (franquicias <= 170) {
+                    comision1 = 30; comision2 = 25;
+                } else {
+                    comision1 = 30; comision2 = 25;
+                }
+                
+                // Calcular ingresos
+                const ingresoAnual = franquicias * 200 * 12;
+                const ingreso1 = Math.round((ingresoAnual * comision1) / 100);
+                const ingreso2 = Math.round((ingresoAnual * comision2) / 100);
+                
+                // Actualizar display
+                ano1.textContent = `${ingreso1.toLocaleString('es-ES')}€`;
+                ano2.textContent = `${ingreso2.toLocaleString('es-ES')}€`;
+                
+                console.log(`💰 ACTUALIZADO: ${franquicias} franquicias → ${ingreso1}€ / ${ingreso2}€`);
+            }
+            
+            // Limpiar eventos anteriores
+            slider.oninput = null;
+            slider.onchange = null;
+            
+            // Agregar eventos
+            slider.oninput = calcular;
+            slider.onchange = calcular;
+            slider.addEventListener('input', calcular);
+            slider.addEventListener('change', calcular);
+            
+            // Ejecutar inmediatamente
+            calcular();
+            
+            console.log('🎯 CALCULADORA DIRECTA ACTIVADA');
+        }
+        
+        // Ejecutar cuando el DOM esté listo
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', activarCalculadoraDirecta);
+        } else {
+            activarCalculadoraDirecta();
+        }
+        
+        // Respaldo adicional
+        setTimeout(activarCalculadoraDirecta, 500);
+        setTimeout(activarCalculadoraDirecta, 1500);
+        
+        console.log('🔥 SCRIPT DIRECTO CONFIGURADO');
+    </script>
+</body>
+</html> 

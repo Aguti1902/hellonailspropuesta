@@ -2,5 +2,19 @@
   "version": 2,
   "name": "hellonails-propuesta",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/agentes-ia",
+      "dest": "/agentes-ia.html"
+    },
+    {
+      "src": "/app",
+      "dest": "/app.html"
+    }
+  ]
 } 
