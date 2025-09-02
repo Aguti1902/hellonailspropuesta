@@ -6,11 +6,11 @@
 }
 
 :root {
-    /* Colores NexGent Sutiles */
-    --nexgent-primary: #00d9ff;
-    --nexgent-secondary: #0099cc;
-    --nexgent-accent: #ff006e;
-    --nexgent-purple: #7209b7;
+    /* Colores NexGent - Basados en imagen */
+    --nexgent-primary: #e91e63;  /* Rosa/Magenta principal */
+    --nexgent-secondary: #3f51b5; /* Azul secundario */
+    --nexgent-accent: #ff4081;   /* Rosa claro para acentos */
+    --nexgent-purple: #9c27b0;   /* Púrpura */
     
     /* Colores base elegantes */
     --white: #ffffff;
@@ -26,10 +26,10 @@
     --gray-900: #1a1d23;
     
     /* Acentos con NexGent */
-    --primary: #2563eb;
-    --success: #059669;
-    --warning: #d97706;
-    --danger: #dc2626;
+    --primary: #3f51b5;  /* Azul principal */
+    --success: #4caf50;  /* Verde */
+    --warning: #ff9800;  /* Naranja */
+    --danger: #f44336;   /* Rojo */
     --info: var(--nexgent-secondary);
     
     /* Backgrounds */
@@ -47,7 +47,7 @@
     /* Borders */
     --border-light: var(--gray-200);
     --border-medium: var(--gray-300);
-    --border-nexgent: rgba(0, 217, 255, 0.2);
+    --border-nexgent: rgba(233, 30, 99, 0.2);
     
     /* Sombras elegantes */
     --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);

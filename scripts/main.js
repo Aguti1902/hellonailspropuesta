@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Actualizar slider
                 const porcentaje = ((franquicias - 1) / 299) * 100;
-                slider.style.background = `linear-gradient(to right, #00d9ff ${porcentaje}%, #e9ecef ${porcentaje}%)`;
+                slider.style.background = `linear-gradient(to right, #e91e63 ${porcentaje}%, #e9ecef ${porcentaje}%)`;
                 
                 // Calcular comisiones
                 let com1, com2;
@@ -406,7 +406,7 @@ function initCalculator() {
         
         // Actualizar slider color
         const porcentaje = ((franquicias - 1) / 299) * 100;
-        slider.style.background = `linear-gradient(to right, #00d9ff ${porcentaje}%, #e9ecef ${porcentaje}%)`;
+        slider.style.background = `linear-gradient(to right, #e91e63 ${porcentaje}%, #e9ecef ${porcentaje}%)`;
         
         // Calcular comisiones
         let com1, com2;
