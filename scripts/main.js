@@ -84,10 +84,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 const ano2 = Math.round((ingresoAnual * com2) / 100);
                 
                 // Actualizar display
-                year1Display.textContent = `€${ano1.toLocaleString('es-ES')}`;
-                year2Display.textContent = `€${ano2.toLocaleString('es-ES')}`;
+                year1Display.textContent = `${ano1.toLocaleString('es-ES')}€`;
+                year2Display.textContent = `${ano2.toLocaleString('es-ES')}€`;
                 
-                console.log(`💰 Actualizado: ${franquicias} franquicias = €${ano1} / €${ano2}`);
+                console.log(`💰 Actualizado: ${franquicias} franquicias = ${ano1}€ / ${ano2}€`);
             }
             
             // Remover eventos anteriores y agregar nuevos
@@ -342,7 +342,7 @@ function createRevenueChart() {
                     cornerRadius: 8,
                     callbacks: {
                         label: function(context) {
-                            return `${context.dataset.label}: €${context.parsed.y.toLocaleString('es-ES')}`;
+                            return `${context.dataset.label}: ${context.parsed.y.toLocaleString('es-ES')}€`;
                         }
                     }
                 }
@@ -428,10 +428,10 @@ function initCalculator() {
         const ano2 = Math.round((ingresoAnual * com2) / 100);
         
         // Actualizar display
-        year1Display.textContent = `€${ano1.toLocaleString('es-ES')}`;
-        year2Display.textContent = `€${ano2.toLocaleString('es-ES')}`;
+        year1Display.textContent = `${ano1.toLocaleString('es-ES')}€`;
+        year2Display.textContent = `${ano2.toLocaleString('es-ES')}€`;
         
-        console.log(`Actualizado: ${franquicias} franquicias -> €${ano1} / €${ano2}`);
+        console.log(`Actualizado: ${franquicias} franquicias -> ${ano1}€ / ${ano2}€`);
     }
     
     slider.addEventListener('input', actualizar);
@@ -525,12 +525,12 @@ function animateCounter(element, target) {
         const easeProgress = easeOutCubic(progress);
         
         current = Math.floor(target * easeProgress);
-        element.textContent = '€' + current.toLocaleString('es-ES');
+        element.textContent = current.toLocaleString('es-ES') + '€';
         
         if (progress < 1) {
             requestAnimationFrame(updateCounter);
         } else {
-            element.textContent = '€' + target.toLocaleString('es-ES');
+            element.textContent = target.toLocaleString('es-ES') + '€';
             element.classList.add('animated');
         }
     }

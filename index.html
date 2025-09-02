@@ -43,7 +43,7 @@
                     
                     <div class="summary-card revenue">
                         <div class="card-icon"><i class="fas fa-euro-sign"></i></div>
-                        <div class="metric-large">€144k</div>
+                        <div class="metric-large">144k€</div>
                         <h3 class="metric-title">Potencial Anual</h3>
                         <p class="metric-description">Ingresos por comisiones estimados</p>
                         <div class="metric-detail">Basado en 100 franquicias activas</div>
@@ -72,9 +72,9 @@
                         </div>
                         <div class="pricing-content">
                             <div class="price-display">
-                                <div class="price-main">€150<span>/mes</span></div>
-                                <div class="price-original">€200/mes</div>
-                                <div class="price-savings">€50 de descuento exclusivo</div>
+                                <div class="price-main">150€<span>/mes</span></div>
+                                <div class="price-original">200€/mes</div>
+                                <div class="price-savings">50€ de descuento exclusivo</div>
                             </div>
                             <div class="pricing-features">
                                 <div class="feature"><i class="fas fa-check"></i> IA especializada en belleza</div>
@@ -91,7 +91,7 @@
                         </div>
                         <div class="pricing-content">
                             <div class="price-display">
-                                <div class="price-main">€200<span>/mes</span></div>
+                                <div class="price-main">200€<span>/mes</span></div>
                                 <div class="commission-info">+ Comisión para HelloNails</div>
                             </div>
                             <div class="pricing-features">
@@ -168,26 +168,26 @@
                 <div class="metrics-grid">
                     <div class="metric-card-compact">
                         <div class="metric-header">50 Franquicias</div>
-                        <div class="metric-amount">€18.000</div>
-                        <div class="metric-subtitle">€1.500/mes (15%)</div>
+                        <div class="metric-amount">18.000€</div>
+                        <div class="metric-subtitle">1.500€/mes (15%)</div>
                     </div>
                     
                     <div class="metric-card-compact">
                         <div class="metric-header">100 Franquicias</div>
-                        <div class="metric-amount">€48.000</div>
-                        <div class="metric-subtitle">€4.000/mes (20%)</div>
+                        <div class="metric-amount">48.000€</div>
+                        <div class="metric-subtitle">4.000€/mes (20%)</div>
                     </div>
                     
                     <div class="metric-card-compact">
                         <div class="metric-header">150 Franquicias</div>
-                        <div class="metric-amount">€90.000</div>
-                        <div class="metric-subtitle">€7.500/mes (25%)</div>
+                        <div class="metric-amount">90.000€</div>
+                        <div class="metric-subtitle">7.500€/mes (25%)</div>
                     </div>
                     
                     <div class="metric-card-compact featured">
                         <div class="metric-header">200 Franquicias</div>
-                        <div class="metric-amount">€144.000</div>
-                        <div class="metric-subtitle">€12.000/mes (30%)</div>
+                        <div class="metric-amount">144.000€</div>
+                        <div class="metric-subtitle">12.000€/mes (30%)</div>
                     </div>
                 </div>
                 
@@ -204,13 +204,13 @@
                         <div class="results-section">
                             <div class="result-card year1">
                                 <div class="result-title">Ingresos Año 1</div>
-                                <div class="result-amount" id="year1Amount">€48.000</div>
+                                <div class="result-amount" id="year1Amount">48.000€</div>
                                 <div class="result-subtitle">Con incentivo 5%</div>
                             </div>
                             
                             <div class="result-card year2">
                                 <div class="result-title">Ingresos Año 2+</div>
-                                <div class="result-amount" id="year2Amount">€36.000</div>
+                                <div class="result-amount" id="year2Amount">36.000€</div>
                                 <div class="result-subtitle">Sin incentivo (max 25%)</div>
                             </div>
                         </div>
@@ -307,10 +307,10 @@
                 const ingreso2 = Math.round((ingresoAnual * comision2) / 100);
                 
                 // Actualizar display
-                ano1.textContent = `€${ingreso1.toLocaleString('es-ES')}`;
-                ano2.textContent = `€${ingreso2.toLocaleString('es-ES')}`;
+                ano1.textContent = `${ingreso1.toLocaleString('es-ES')}€`;
+                ano2.textContent = `${ingreso2.toLocaleString('es-ES')}€`;
                 
-                console.log(`💰 ACTUALIZADO: ${franquicias} franquicias → €${ingreso1} / €${ingreso2}`);
+                console.log(`💰 ACTUALIZADO: ${franquicias} franquicias → ${ingreso1}€ / ${ingreso2}€`);
             }
             
             // Limpiar eventos anteriores
