@@ -1,133 +1,158 @@
-# Propuesta HelloNails - NexGent AI Systems
+# 💅 HelloNails × NexGent AI - Propuesta Premium
 
-Una web moderna y profesional para presentar la propuesta de colaboración entre NexGent AI Systems y HelloNails.
+> **Transformación digital inteligente para el sector de la belleza**
 
-## 📋 Descripción del Proyecto
+Una propuesta de colaboración innovadora que combina la experiencia de HelloNails en el sector beauty con la tecnología de IA de NexGent para crear una solución integral de franquicias.
 
-Esta web presenta una propuesta de colaboración para HelloNails, que cuenta con 190 tiendas (20 propias y 170 franquicias), ofreciendo un modelo de ingresos escalables mediante agentes de IA especializados para tiendas de estética, uñas y belleza.
+## ✨ Características Principales
 
-## 🎯 Características Principales
+### 🎨 **Diseño Premium**
+- **Glassmorphism avanzado** con efectos de cristal
+- **Animaciones 3D** con perspectiva y rotaciones
+- **Efectos de luz** con shimmer y resplandores
+- **Gradientes dinámicos** y colores adaptativos
 
-### Propuesta de Valor
-- **Tiendas Propias**: Precio especial de 150€/mes (descuento de 50€)
-- **Franquicias**: Precio de 200€/mes con sistema de comisiones escalables
-- **Modelo de Comisiones**: Progresivo según número de franquicias activas
+### 🧮 **Calculadora ROI Interactiva**
+- **Cálculos en tiempo real** basados en número de franquicias
+- **Slider interactivo** con efectos visuales
+- **Comisiones escalonadas** según volumen
+- **Formato de moneda español** (€)
 
-### Proyecciones de Ingresos
-- 50 franquicias: 18.000€/año (Año 1) - 12.000€/año (Año 2+)
-- 100 franquicias: 48.000€/año (Año 1) - 36.000€/año (Año 2+)
-- 200 franquicias: 120.000€/año (Año 1) - 96.000€/año (Año 2+)
+### 📊 **Estructura de Precios**
+- **20 Tiendas Propias**: €150/mes (descuento de €50)
+- **170 Franquicias**: €200/mes + comisiones
+- **Comisiones crecientes**: 10-30% según volumen
 
-## 🛠️ Tecnologías Utilizadas
+### 🎯 **Tecnología Implementada**
+- **HTML5 semántico** y accesible
+- **CSS3 avanzado** con custom properties
+- **JavaScript vanilla** optimizado
+- **Responsive design** mobile-first
+- **Performance optimizado** para Vercel
 
-- **HTML5**: Estructura semántica y accesible
-- **CSS3**: Diseño responsive con variables CSS y Grid/Flexbox
-- **JavaScript ES6+**: Funcionalidad interactiva moderna
-- **Font Awesome**: Iconografía profesional
-- **Google Fonts**: Tipografía Inter para mejor legibilidad
+## 🚀 Deploy en Vercel
 
-## 🎨 Características de Diseño
+Este proyecto está optimizado para desplegarse en Vercel con configuración automática:
 
-### UI/UX Moderno
-- Diseño responsive que se adapta a todos los dispositivos
-- Paleta de colores profesional con gradientes
-- Animaciones suaves y efectos de transición
-- Navegación intuitiva con scroll suave
-
-### Funcionalidades Interactivas
-- Modal de contacto con validación de formularios
-- Animaciones al hacer scroll (Intersection Observer)
-- Efectos parallax en la sección hero
-- Contadores animados para estadísticas
-- Sistema de notificaciones
-- Menú móvil responsive
+1. **Conecta tu repositorio GitHub**
+2. **Deploy automático** en cada push
+3. **CDN global** para máxima velocidad
+4. **HTTPS automático** y dominio personalizable
 
 ## 📁 Estructura del Proyecto
 
 ```
-HELLO NAILS/
+hellonails-propuesta/
 ├── index.html              # Página principal
 ├── styles/
-│   └── main.css            # Estilos principales
+│   └── main.css            # Estilos premium con efectos 3D
 ├── scripts/
-│   └── main.js             # Funcionalidad JavaScript
+│   └── main.js             # Lógica interactiva y calculadora
+├── assets/
+│   ├── images/             # Recursos gráficos
+│   └── config.json         # Configuración del proyecto
+├── test.html               # Página de pruebas de calculadora
+├── debug.html              # Herramientas de diagnóstico
+├── vercel.json             # Configuración de despliegue
 └── README.md               # Documentación
+
 ```
 
-## 🚀 Cómo Usar
+## 🎮 Páginas Disponibles
 
-1. **Instalación**: No requiere instalación, es una web estática
-2. **Ejecución**: Abrir `index.html` en cualquier navegador moderno
-3. **Desarrollo**: Modificar archivos CSS/JS según necesidades
+- **`/`** - Propuesta principal con diseño premium
+- **`/test`** - Calculadora aislada para pruebas
+- **`/debug`** - Herramientas de diagnóstico técnico
 
-## 📱 Compatibilidad
+## 🛠️ Tecnologías Utilizadas
 
-- ✅ Chrome 60+
-- ✅ Firefox 60+
-- ✅ Safari 12+
-- ✅ Edge 79+
-- ✅ Dispositivos móviles (iOS/Android)
+- **HTML5** - Estructura semántica
+- **CSS3** - Glassmorphism, 3D transforms, animations
+- **JavaScript ES6+** - Lógica interactiva
+- **Vercel** - Hosting y CDN
+- **Git** - Control de versiones
 
-## 🔧 Funcionalidades Técnicas
+## 📈 Métricas del Proyecto
 
-### CSS Avanzado
-- Variables CSS para consistencia de diseño
-- Grid y Flexbox para layouts responsivos
-- Animaciones CSS con `@keyframes`
-- Media queries para responsive design
+- **190 Tiendas** en la red HelloNails
+- **€144k Potencial** de ingresos anuales
+- **30% Comisión máxima** en el primer año
+- **Modelo escalable** con crecimiento sostenible
 
-### JavaScript Moderno
-- ES6+ con async/await
-- Intersection Observer API para animaciones
-- Event delegation para mejor rendimiento
-- Debounce/throttle para optimización
+## 🎨 Efectos Visuales Implementados
 
-### Optimizaciones
-- Lazy loading de elementos
-- Eventos optimizados (throttle/debounce)
-- Código modular y reutilizable
-- Transiciones suaves y performantes
+### Glassmorphism
+- Backdrop blur 20px
+- Transparencias multicapa
+- Bordes con gradientes
 
-## 📊 Métricas de la Propuesta
+### Animaciones 3D
+- Transform 3D con perspectiva
+- Rotaciones sutiles en hover
+- Scale dinámico
 
-### Modelo de Comisiones Escalables
-| Franquicias | Año 1 | Año 2+ | Incentivo Inicial |
-|-------------|--------|--------|-------------------|
-| 50          | 15%    | 10%    | +5% extra         |
-| 100         | 20%    | 15%    | +5% extra         |
-| 200         | 25%    | 20%    | +5% extra         |
+### Efectos de Luz
+- Shimmer effects animados
+- Text shadows con glow
+- Gradientes cónicos rotativos
 
-### Beneficios Clave
-- **Ingresos Pasivos**: Monetización continua sin esfuerzo adicional
-- **Valor Agregado**: Tecnología IA avanzada para franquicias
-- **Escalabilidad**: Crecimiento proporcional a la red
+## 📱 Responsive Design
 
-## 🎨 Personalización
+El diseño se adapta perfectamente a:
+- **Desktop** (1200px+)
+- **Tablet** (768px - 1199px)  
+- **Mobile** (320px - 767px)
 
-### Colores
-Modificar las variables CSS en `styles/main.css`:
-```css
-:root {
-    --primary-color: #6366f1;
-    --secondary-color: #ec4899;
-    --accent-color: #f59e0b;
-    /* ... más variables */
-}
-```
+## ⚡ Performance
 
-### Contenido
-Editar directamente el HTML en `index.html` para cambiar textos, precios o estadísticas.
+- **Carga rápida** con assets optimizados
+- **Lazy loading** de imágenes
+- **CSS y JS minificados**
+- **Cache estratégico** configurado
+
+## 🧮 Calculadora ROI
+
+### Estructura de Comisiones
+
+| Franquicias | Año 1 | Año 2+ | Incentivo |
+|-------------|-------|--------|-----------|
+| 1-50        | 15%   | 10%    | +5% extra |
+| 51-100      | 20%   | 15%    | +5% extra |
+| 101-150     | 25%   | 20%    | +5% extra |
+| 151-200     | 30%   | 25%    | +5% extra |
+| 201+        | 30%   | 25%    | Máximo    |
+
+### Ejemplos de Ingresos
+
+- **100 franquicias**: €48.000 (Año 1) → €36.000 (Año 2+)
+- **200 franquicias**: €144.000 (Año 1) → €120.000 (Año 2+)
+- **300 franquicias**: €216.000 (Año 1) → €180.000 (Año 2+)
+
+## 🚀 Instrucciones para Vercel
+
+### Paso 1: Conectar GitHub
+1. Ve a [vercel.com](https://vercel.com)
+2. Conecta tu cuenta de GitHub
+3. Importa el repositorio `hellonailspropuesta`
+
+### Paso 2: Configuración Automática
+- Vercel detectará automáticamente que es un sitio estático
+- La configuración `vercel.json` optimizará el despliegue
+- El dominio será generado automáticamente
+
+### Paso 3: Deploy
+- Cada push a `main` desplegará automáticamente
+- URLs disponibles:
+  - `https://tu-proyecto.vercel.app/`
+  - `https://tu-proyecto.vercel.app/test`
+  - `https://tu-proyecto.vercel.app/debug`
 
 ## 📞 Contacto
 
-Para consultas sobre esta propuesta:
-- **Email**: info@nexgent.ai
-- **Teléfono**: +34 900 123 456
-
-## 📄 Licencia
-
-© 2024 NexGent AI Systems. Todos los derechos reservados.
+**NexGent AI Systems**
+- Email: info@nexgent.ai
+- Propuesta específica para HelloNails
 
 ---
 
-**Nota**: Esta es una propuesta comercial específica para HelloNails. El código está optimizado para presentación y puede adaptarse según necesidades específicas. 
+**Desarrollado con ❤️ para HelloNails por NexGent AI** 
