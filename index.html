@@ -43,10 +43,10 @@
                     
                     <div class="summary-card revenue">
                         <div class="card-icon"><i class="fas fa-euro-sign"></i></div>
-                        <div class="metric-large">144k€</div>
+                        <div class="metric-large">122k€</div>
                         <h3 class="metric-title">Potencial Anual</h3>
                         <p class="metric-description">Ingresos por comisiones estimados</p>
-                        <div class="metric-detail">Basado en 100 franquicias activas</div>
+                        <div class="metric-detail">Basado en 170 franquicias activas</div>
                     </div>
                     
                     <div class="summary-card margin">
@@ -141,7 +141,7 @@
                             <div class="incentive-badge">+5%</div>
                         </div>
                         <div class="table-row">
-                            <div class="franchise-range">151-200</div>
+                            <div class="franchise-range">151-170</div>
                             <div class="commission-rate">30%</div>
                             <div class="commission-rate">25%</div>
                             <div class="incentive-badge">+5%</div>
@@ -185,9 +185,9 @@
                     </div>
                     
                     <div class="metric-card-compact featured">
-                        <div class="metric-header">200 Franquicias</div>
-                        <div class="metric-amount">144.000€</div>
-                        <div class="metric-subtitle">12.000€/mes (30%)</div>
+                        <div class="metric-header">170 Franquicias</div>
+                        <div class="metric-amount">122.400€</div>
+                        <div class="metric-subtitle">10.200€/mes (30%)</div>
                     </div>
                 </div>
                 
@@ -197,7 +197,7 @@
                     <div class="calculator-content">
                         <div class="slider-section">
                             <label class="slider-label">Número de Franquicias Activas</label>
-                            <input type="range" min="1" max="300" value="100" class="franchise-slider" id="franchiseSlider">
+                            <input type="range" min="1" max="170" value="100" class="franchise-slider" id="franchiseSlider">
                             <div class="franchise-count-display" id="franchiseCount">100</div>
                         </div>
                         
@@ -284,7 +284,7 @@
                 contador.textContent = franquicias;
                 
                 // Actualizar color del slider
-                const porcentaje = ((franquicias - 1) / 299) * 100;
+                const porcentaje = ((franquicias - 1) / 169) * 100;
                 slider.style.background = `linear-gradient(to right, #00d9ff ${porcentaje}%, #e9ecef ${porcentaje}%)`;
                 
                 // Calcular comisiones
@@ -295,7 +295,7 @@
                     comision1 = 20; comision2 = 15;
                 } else if (franquicias <= 150) {
                     comision1 = 25; comision2 = 20;
-                } else if (franquicias <= 200) {
+                } else if (franquicias <= 170) {
                     comision1 = 30; comision2 = 25;
                 } else {
                     comision1 = 30; comision2 = 25;

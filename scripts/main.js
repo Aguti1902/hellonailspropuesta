@@ -1,15 +1,15 @@
 // Configuración de datos
 const DATA = {
-    franchiseLevels: [50, 100, 150, 200],
+    franchiseLevels: [50, 100, 150, 170],
     commissions: {
         year1: [15, 20, 25, 30], // Incluye +5% incentivo (10+5, 15+5, 20+5, 25+5)
-        year2: [10, 15, 20, 25]  // Sin incentivo año 2+ (máximo 25% para 200+)
+        year2: [10, 15, 20, 25]  // Sin incentivo año 2+ (máximo 25% para 170)
     },
     revenues: {
         50: { year1: 18000, year2: 12000 },   // 50×200×12×15% = 18k, 50×200×12×10% = 12k ✓
         100: { year1: 48000, year2: 36000 },  // 100×200×12×20% = 48k, 100×200×12×15% = 36k ✓
         150: { year1: 90000, year2: 72000 },  // 150×200×12×25% = 90k, 150×200×12×20% = 72k ✓
-        200: { year1: 144000, year2: 120000 } // 200×200×12×30% = 144k, 200×200×12×25% = 120k ✓
+        170: { year1: 122400, year2: 102000 } // 170×200×12×30% = 122.4k, 170×200×12×25% = 102k ✓
     }
 };
 
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (franquicias <= 50) { com1 = 15; com2 = 10; }
                 else if (franquicias <= 100) { com1 = 20; com2 = 15; }
                 else if (franquicias <= 150) { com1 = 25; com2 = 20; }
-                else if (franquicias <= 200) { com1 = 30; com2 = 25; }
+                else if (franquicias <= 170) { com1 = 30; com2 = 25; }
                 else { com1 = 30; com2 = 25; }
                 
                 // Calcular ingresos
@@ -416,7 +416,7 @@ function initCalculator() {
             com1 = 20; com2 = 15;
         } else if (franquicias <= 150) {
             com1 = 25; com2 = 20;
-        } else if (franquicias <= 200) {
+        } else if (franquicias <= 170) {
             com1 = 30; com2 = 25;
         } else {
             com1 = 30; com2 = 25;
