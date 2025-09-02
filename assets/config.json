@@ -1,0 +1,116 @@
+{
+  "project": {
+    "name": "Propuesta HelloNails",
+    "company": "NexGent AI Systems",
+    "version": "1.0.0",
+    "created": "2024",
+    "description": "Propuesta de colaboración para HelloNails - Agentes de IA personalizados"
+  },
+  "helloNails": {
+    "totalStores": 190,
+    "ownStores": 20,
+    "franchises": 170,
+    "targetMarket": "Estética, uñas y belleza"
+  },
+  "pricing": {
+    "ownStores": {
+      "price": 150,
+      "currency": "EUR",
+      "period": "monthly",
+      "discount": 50,
+      "features": [
+        "Precio especial exclusivo",
+        "Agente de IA personalizado",
+        "Soporte prioritario"
+      ]
+    },
+    "franchises": {
+      "price": 200,
+      "currency": "EUR",
+      "period": "monthly",
+      "features": [
+        "Precio de venta estándar",
+        "Comisiones por cada venta",
+        "Ingresos pasivos continuos"
+      ]
+    }
+  },
+  "commissionModel": {
+    "tiers": [
+      {
+        "franchises": 50,
+        "year1": 15,
+        "year2Plus": 10,
+        "initialIncentive": 5
+      },
+      {
+        "franchises": 100,
+        "year1": 20,
+        "year2Plus": 15,
+        "initialIncentive": 5
+      },
+      {
+        "franchises": 200,
+        "year1": 25,
+        "year2Plus": 20,
+        "initialIncentive": 5
+      }
+    ]
+  },
+  "incomeProjections": [
+    {
+      "franchises": 50,
+      "year1": 18000,
+      "year2Plus": 12000
+    },
+    {
+      "franchises": 100,
+      "year1": 48000,
+      "year2Plus": 36000
+    },
+    {
+      "franchises": 200,
+      "year1": 120000,
+      "year2Plus": 96000
+    }
+  ],
+  "contact": {
+    "email": "info@nexgent.ai",
+    "phone": "+34 900 123 456",
+    "website": "https://nexgent.ai",
+    "social": {
+      "linkedin": "#",
+      "twitter": "#",
+      "instagram": "#"
+    }
+  },
+  "features": {
+    "aiAgents": "Agentes de IA especializados para tiendas de belleza",
+    "scalableIncome": "Modelo de ingresos escalables",
+    "strategicCollaboration": "Colaboración estratégica a largo plazo"
+  },
+  "benefits": [
+    {
+      "title": "Ingresos Pasivos",
+      "description": "Genera ingresos continuos sin esfuerzo adicional",
+      "icon": "money-bill-wave"
+    },
+    {
+      "title": "Valor para Franquicias",
+      "description": "Ofrece tecnología avanzada que mejora su negocio",
+      "icon": "users"
+    },
+    {
+      "title": "Crecimiento Escalable",
+      "description": "Los ingresos crecen junto con tu red",
+      "icon": "chart-line"
+    }
+  ],
+  "technical": {
+    "technologies": ["HTML5", "CSS3", "JavaScript ES6+", "Font Awesome", "Google Fonts"],
+    "responsive": true,
+    "animations": true,
+    "accessibility": true,
+    "performance": "optimized"
+  }
+} 

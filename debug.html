@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Calculadora</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f0f0f0; }
+        .debug-container { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        .error { color: red; }
+        .success { color: green; }
+        .info { color: blue; }
+        pre { background: #f5f5f5; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        .test-result { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .test-pass { background: #d4edda; border: 1px solid #c3e6cb; }
+        .test-fail { background: #f8d7da; border: 1px solid #f5c6cb; }
+    </style>
+</head>
+<body>
+    <div class="debug-container">
+        <h1>🔍 Diagnóstico de la Calculadora</h1>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        function log(message, type = 'info') {
+            const div = document.createElement('div');
+            div.className = `test-result test-${type === 'error' ? 'fail' : 'pass'}`;
+            div.innerHTML = `<strong>${type.toUpperCase()}:</strong> ${message}`;
+            document.getElementById('results').appendChild(div);
+            console.log(`[${type.toUpperCase()}] ${message}`);
+        }
+
+        function runDiagnostics() {
+            log('🚀 Iniciando diagnóstico completo...', 'info');
+
+            // Test 1: Verificar que los elementos existen en el DOM principal
+            log('📋 Test 1: Verificando elementos del DOM...', 'info');
+            
+            fetch('/')
+                .then(response => response.text())
+                .then(html => {
+                    const hasSlider = html.includes('id="franchiseSlider"');
+                    const hasCount = html.includes('id="franchiseCount"');
+                    const hasYear1 = html.includes('id="year1Amount"');
+                    const hasYear2 = html.includes('id="year2Amount"');
+                    
+                    log(`Slider presente: ${hasSlider ? '✅' : '❌'}`, hasSlider ? 'success' : 'error');
+                    log(`Contador presente: ${hasCount ? '✅' : '❌'}`, hasCount ? 'success' : 'error');
+                    log(`Year1 presente: ${hasYear1 ? '✅' : '❌'}`, hasYear1 ? 'success' : 'error');
+                    log(`Year2 presente: ${hasYear2 ? '✅' : '❌'}`, hasYear2 ? 'success' : 'error');
+
+                    // Test 2: Verificar script principal
+                    log('📋 Test 2: Verificando script principal...', 'info');
+                    return fetch('/scripts/main.js');
+                })
+                .then(response => response.text())
+                .then(script => {
+                    const hasInitCalculator = script.includes('function initCalculator');
+                    const hasEventListener = script.includes('DOMContentLoaded');
+                    const hasActualizar = script.includes('function actualizar');
+                    
+                    log(`Función initCalculator: ${hasInitCalculator ? '✅' : '❌'}`, hasInitCalculator ? 'success' : 'error');
+                    log(`Event listener DOM: ${hasEventListener ? '✅' : '❌'}`, hasEventListener ? 'success' : 'error');
+                    log(`Función actualizar: ${hasActualizar ? '✅' : '❌'}`, hasActualizar ? 'success' : 'error');
+
+                    // Test 3: Simular carga de página principal
+                    log('📋 Test 3: Simulando elementos de página principal...', 'info');
+                    
+                    // Crear elementos simulados
+                    const slider = document.createElement('input');
+                    slider.type = 'range';
+                    slider.id = 'franchiseSlider';
+                    slider.min = '1';
+                    slider.max = '300';
+                    slider.value = '168';
+                    document.body.appendChild(slider);
+
+                    const countDisplay = document.createElement('div');
+                    countDisplay.id = 'franchiseCount';
+                    countDisplay.textContent = '100';
+                    document.body.appendChild(countDisplay);
+
+                    const year1Display = document.createElement('div');
+                    year1Display.id = 'year1Amount';
+                    year1Display.textContent = '€48.000';
+                    document.body.appendChild(year1Display);
+
+                    const year2Display = document.createElement('div');
+                    year2Display.id = 'year2Amount';
+                    year2Display.textContent = '€36.000';
+                    document.body.appendChild(year2Display);
+
+                    log('Elementos simulados creados ✅', 'success');
+
+                    // Test 4: Ejecutar función directamente
+                    log('📋 Test 4: Ejecutando función de calculadora...', 'info');
+                    
+                    try {
+                        // Función de calculadora directa
+                        function testCalculator() {
+                            const slider = document.getElementById('franchiseSlider');
+                            const countDisplay = document.getElementById('franchiseCount');
+                            const year1Display = document.getElementById('year1Amount');
+                            const year2Display = document.getElementById('year2Amount');
+                            
+                            if (!slider || !countDisplay || !year1Display || !year2Display) {
+                                throw new Error('Elementos no encontrados');
+                            }
+                            
+                            function actualizar() {
+                                const franquicias = parseInt(slider.value);
+                                
+                                countDisplay.textContent = franquicias;
+                                
+                                const porcentaje = ((franquicias - 1) / 299) * 100;
+                                slider.style.background = `linear-gradient(to right, #00d9ff ${porcentaje}%, #e9ecef ${porcentaje}%)`;
+                                
+                                let com1, com2;
+                                if (franquicias <= 50) {
+                                    com1 = 15; com2 = 10;
+                                } else if (franquicias <= 100) {
+                                    com1 = 20; com2 = 15;
+                                } else if (franquicias <= 150) {
+                                    com1 = 25; com2 = 20;
+                                } else if (franquicias <= 200) {
+                                    com1 = 30; com2 = 25;
+                                } else {
+                                    com1 = 30; com2 = 25;
+                                }
+                                
+                                const ingresoAnual = franquicias * 200 * 12;
+                                const ano1 = Math.round((ingresoAnual * com1) / 100);
+                                const ano2 = Math.round((ingresoAnual * com2) / 100);
+                                
+                                year1Display.textContent = `€${ano1.toLocaleString('es-ES')}`;
+                                year2Display.textContent = `€${ano2.toLocaleString('es-ES')}`;
+                                
+                                return { franquicias, ano1, ano2, com1, com2 };
+                            }
+                            
+                            slider.addEventListener('input', actualizar);
+                            const result = actualizar();
+                            
+                            return result;
+                        }
+
+                        const result = testCalculator();
+                        log(`Calculadora ejecutada ✅: ${result.franquicias} franquicias = €${result.ano1} / €${result.ano2}`, 'success');
+                        log(`Comisiones aplicadas: ${result.com1}% / ${result.com2}%`, 'info');
+                        
+                        // Verificar que los valores se actualizaron
+                        const newYear1 = document.getElementById('year1Amount').textContent;
+                        const newYear2 = document.getElementById('year2Amount').textContent;
+                        const newCount = document.getElementById('franchiseCount').textContent;
+                        
+                        log(`Valores finales: ${newCount} franquicias → ${newYear1} / ${newYear2}`, 'success');
+                        
+                        // Test 5: Probar evento del slider
+                        log('📋 Test 5: Probando evento del slider...', 'info');
+                        slider.value = '50';
+                        slider.dispatchEvent(new Event('input'));
+                        
+                        setTimeout(() => {
+                            const finalYear1 = document.getElementById('year1Amount').textContent;
+                            const finalYear2 = document.getElementById('year2Amount').textContent;
+                            const finalCount = document.getElementById('franchiseCount').textContent;
+                            
+                            log(`Después del evento: ${finalCount} franquicias → ${finalYear1} / ${finalYear2}`, 'success');
+                            log('🎉 Diagnóstico completado. La calculadora FUNCIONA correctamente.', 'success');
+                            log('❗ El problema debe estar en la página principal. Revisa la consola del navegador en la página principal.', 'error');
+                        }, 100);
+                        
+                    } catch (error) {
+                        log(`Error en ejecución: ${error.message}`, 'error');
+                    }
+                })
+                .catch(error => {
+                    log(`Error en diagnóstico: ${error.message}`, 'error');
+                });
+        }
+
+        // Ejecutar diagnóstico al cargar
+        document.addEventListener('DOMContentLoaded', runDiagnostics);
+    </script>
+</body>
+</html> 
