@@ -155,4 +155,4 @@ El diseño se adapta perfectamente a:
 
 ---
 
-**Desarrollado con ❤️ para HelloNails por NexGent AI** 
+**Desarrollado para HelloNails por NexGent AI** 
