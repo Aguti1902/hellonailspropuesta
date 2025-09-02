@@ -1,0 +1,14 @@
+# Archivos de debug y test
+debug.html
+test.html
+
+# Archivos de sistema
+.DS_Store
+*.log
+
+# Node modules si se añaden
+node_modules/
+
+# Archivos temporales
+*.tmp
+*.temp 
