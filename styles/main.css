@@ -27,9 +27,9 @@
     
     /* Acentos con NexGent */
     --primary: #3f51b5;  /* Azul principal */
-    --success: #4caf50;  /* Verde */
-    --warning: #ff9800;  /* Naranja */
-    --danger: #f44336;   /* Rojo */
+    --success: #9c27b0;  /* Púrpura (en lugar de verde) */
+    --warning: #ff4081;  /* Rosa claro */
+    --danger: #e91e63;   /* Rosa principal */
     --info: var(--nexgent-secondary);
     
     /* Backgrounds */
@@ -60,9 +60,9 @@
     /* Gradientes sutiles */
     --gradient-primary: linear-gradient(135deg, var(--primary) 0%, #3b82f6 100%);
     --gradient-nexgent: linear-gradient(135deg, var(--nexgent-primary) 0%, var(--nexgent-secondary) 100%);
-    --gradient-success: linear-gradient(135deg, var(--success) 0%, #10b981 100%);
-    --gradient-warning: linear-gradient(135deg, var(--warning) 0%, #f59e0b 100%);
-    --gradient-subtle: linear-gradient(135deg, rgba(0, 217, 255, 0.03) 0%, rgba(114, 9, 183, 0.02) 100%);
+    --gradient-success: linear-gradient(135deg, var(--success) 0%, #7b1fa2 100%);
+    --gradient-warning: linear-gradient(135deg, var(--warning) 0%, #f06292 100%);
+    --gradient-subtle: linear-gradient(135deg, rgba(233, 30, 99, 0.03) 0%, rgba(63, 81, 181, 0.02) 100%);
     
     /* Tipografía */
     --font-size-xs: 0.75rem;
