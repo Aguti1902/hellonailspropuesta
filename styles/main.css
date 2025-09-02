@@ -100,7 +100,7 @@ body {
 /* Header Profesional con Toques NexGent */
 .executive-header {
     background: linear-gradient(135deg, var(--white) 0%, var(--bg-secondary) 100%);
-    padding: 4rem 0 6rem 0;
+    padding: 3rem 0 4rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -280,14 +280,14 @@ body {
 
 /* Secciones */
 section {
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 .section-title {
     font-size: var(--font-size-4xl);
     font-weight: 800;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     color: var(--text-primary);
     letter-spacing: -0.02em;
     position: relative;
