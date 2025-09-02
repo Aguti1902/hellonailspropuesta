@@ -1,36 +1,36 @@
-# 💅 HelloNails × NexGent AI - Propuesta Premium
+# HelloNails × NexGent AI - Propuesta Premium
 
 > **Transformación digital inteligente para el sector de la belleza**
 
 Una propuesta de colaboración innovadora que combina la experiencia de HelloNails en el sector beauty con la tecnología de IA de NexGent para crear una solución integral de franquicias.
 
-## ✨ Características Principales
+## Características Principales
 
-### 🎨 **Diseño Premium**
+### **Diseño Premium**
 - **Glassmorphism avanzado** con efectos de cristal
 - **Animaciones 3D** con perspectiva y rotaciones
 - **Efectos de luz** con shimmer y resplandores
 - **Gradientes dinámicos** y colores adaptativos
 
-### 🧮 **Calculadora ROI Interactiva**
+### **Calculadora ROI Interactiva**
 - **Cálculos en tiempo real** basados en número de franquicias
 - **Slider interactivo** con efectos visuales
 - **Comisiones escalonadas** según volumen
 - **Formato de moneda español** (€)
 
-### 📊 **Estructura de Precios**
+### **Estructura de Precios**
 - **20 Tiendas Propias**: €150/mes (descuento de €50)
 - **170 Franquicias**: €200/mes + comisiones
 - **Comisiones crecientes**: 10-30% según volumen
 
-### 🎯 **Tecnología Implementada**
+### **Tecnología Implementada**
 - **HTML5 semántico** y accesible
 - **CSS3 avanzado** con custom properties
 - **JavaScript vanilla** optimizado
 - **Responsive design** mobile-first
 - **Performance optimizado** para Vercel
 
-## 🚀 Deploy en Vercel
+## Deploy en Vercel
 
 Este proyecto está optimizado para desplegarse en Vercel con configuración automática:
 
@@ -39,7 +39,7 @@ Este proyecto está optimizado para desplegarse en Vercel con configuración aut
 3. **CDN global** para máxima velocidad
 4. **HTTPS automático** y dominio personalizable
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 hellonails-propuesta/
@@ -58,13 +58,13 @@ hellonails-propuesta/
 
 ```
 
-## 🎮 Páginas Disponibles
+## Páginas Disponibles
 
 - **`/`** - Propuesta principal con diseño premium
 - **`/test`** - Calculadora aislada para pruebas
 - **`/debug`** - Herramientas de diagnóstico técnico
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **HTML5** - Estructura semántica
 - **CSS3** - Glassmorphism, 3D transforms, animations
@@ -72,14 +72,14 @@ hellonails-propuesta/
 - **Vercel** - Hosting y CDN
 - **Git** - Control de versiones
 
-## 📈 Métricas del Proyecto
+## Métricas del Proyecto
 
 - **190 Tiendas** en la red HelloNails
 - **€144k Potencial** de ingresos anuales
 - **30% Comisión máxima** en el primer año
 - **Modelo escalable** con crecimiento sostenible
 
-## 🎨 Efectos Visuales Implementados
+## Efectos Visuales Implementados
 
 ### Glassmorphism
 - Backdrop blur 20px
@@ -96,21 +96,21 @@ hellonails-propuesta/
 - Text shadows con glow
 - Gradientes cónicos rotativos
 
-## 📱 Responsive Design
+## Responsive Design
 
 El diseño se adapta perfectamente a:
 - **Desktop** (1200px+)
 - **Tablet** (768px - 1199px)  
 - **Mobile** (320px - 767px)
 
-## ⚡ Performance
+## Performance
 
 - **Carga rápida** con assets optimizados
 - **Lazy loading** de imágenes
 - **CSS y JS minificados**
 - **Cache estratégico** configurado
 
-## 🧮 Calculadora ROI
+## Calculadora ROI
 
 ### Estructura de Comisiones
 
@@ -128,7 +128,7 @@ El diseño se adapta perfectamente a:
 - **200 franquicias**: €144.000 (Año 1) → €120.000 (Año 2+)
 - **300 franquicias**: €216.000 (Año 1) → €180.000 (Año 2+)
 
-## 🚀 Instrucciones para Vercel
+## Instrucciones para Vercel
 
 ### Paso 1: Conectar GitHub
 1. Ve a [vercel.com](https://vercel.com)
@@ -147,7 +147,7 @@ El diseño se adapta perfectamente a:
   - `https://tu-proyecto.vercel.app/test`
   - `https://tu-proyecto.vercel.app/debug`
 
-## 📞 Contacto
+## Contacto
 
 **NexGent AI Systems**
 - Email: info@nexgent.ai

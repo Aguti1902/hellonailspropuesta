@@ -355,6 +355,13 @@ section {
     font-size: var(--font-size-4xl);
     margin-bottom: 1.5rem;
     display: block;
+    color: var(--nexgent-primary);
+}
+
+.card-icon i {
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .metric-large {
@@ -785,6 +792,13 @@ section {
     margin-bottom: 0;
 }
 
+.feature i {
+    margin-right: 0.75rem;
+    color: var(--success);
+    font-size: 1rem;
+    min-width: 16px;
+}
+
 /* Gráficas de Comisiones */
 .commission-charts {
     background: var(--bg-secondary);
@@ -1169,6 +1183,13 @@ section {
 .advantage-icon {
     font-size: var(--font-size-5xl);
     margin-bottom: 1.5rem;
+    color: var(--success);
+}
+
+.advantage-icon i {
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .advantage-card h4 {
