@@ -1256,7 +1256,7 @@ section {
 }
 
 .offer-badge {
-    background: var(--primary);
+    background: black;
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
