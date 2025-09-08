@@ -816,7 +816,9 @@ section {
 .fa-map-marker:before { content: "📍"; }
 .fa-lightbulb:before { content: "💡"; }
 .fa-calendar-check:before { content: "✅"; }
+.fa-calendar-plus:before { content: "📅"; }
 .fa-user-circle:before { content: "👤"; }
+.fa-user-check:before { content: "👤"; }
 .fa-paint-brush:before { content: "🎨"; }
 .fa-mobile-alt:before { content: "📱"; }
 .fa-tachometer-alt:before { content: "⚡"; }
@@ -824,6 +826,8 @@ section {
 .fa-palette:before { content: "🎨"; }
 .fa-chart-line:before { content: "📈"; }
 .fa-users:before { content: "👥"; }
+.fa-download:before { content: "⬇️"; }
+.fa-thumbs-up:before { content: "👍"; }
 
 /* Ratings Improvement Section */
 .ratings-improvement {
@@ -985,16 +989,23 @@ section {
 }
 
 .impact-icon {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
-    border-radius: 12px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1rem;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.3);
+    transition: all 0.3s ease;
+}
+
+.impact-card:hover .impact-icon {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(233, 30, 99, 0.4);
 }
 
 .impact-metric {
