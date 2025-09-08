@@ -1232,7 +1232,6 @@ section {
 
 .offer-label {
     color: black;
-    font-weight: 700;
 }
 
 .total-amount {
@@ -1254,11 +1253,6 @@ section {
     color: var(--text-dark);
     line-height: 1.4;
     font-weight: 500;
-}
-
-.offer-description {
-    color: black;
-    font-weight: 600;
 }
 
 .offer-badge {
