@@ -902,11 +902,11 @@ section {
 }
 
 .star.filled {
-    fill: #ffc107;
+    fill: var(--primary);
 }
 
 .star.empty {
-    fill: #ddd;
+    fill: rgba(233, 30, 99, 0.2);
 }
 
 /* Legacy support for Font Awesome stars */
@@ -946,14 +946,14 @@ section {
 }
 
 .icon-negative {
-    fill: #dc3545;
+    fill: var(--primary);
     width: 16px;
     height: 16px;
     min-width: 16px;
 }
 
 .icon-positive {
-    fill: #28a745;
+    fill: var(--secondary);
     width: 16px;
     height: 16px;
     min-width: 16px;
@@ -1020,26 +1020,31 @@ section {
 .impact-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: rgba(233, 30, 99, 0.1);
+    border: 2px solid rgba(233, 30, 99, 0.2);
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1rem;
-    color: white;
-    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.3);
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.15);
     transition: all 0.3s ease;
+}
+
+.impact-card:hover .impact-icon {
+    background: rgba(233, 30, 99, 0.15);
+    border-color: rgba(233, 30, 99, 0.4);
+    transform: scale(1.05);
 }
 
 .impact-icon svg {
     width: 28px;
     height: 28px;
-    fill: white;
+    fill: var(--primary);
 }
 
-.impact-card:hover .impact-icon {
-    transform: scale(1.1);
-    box-shadow: 0 12px 25px rgba(233, 30, 99, 0.4);
+.impact-card:hover .impact-icon svg {
+    fill: var(--secondary);
 }
 
 .impact-metric {
