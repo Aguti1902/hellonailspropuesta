@@ -1256,34 +1256,50 @@ section {
 }
 
 .offer-badge {
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
     margin-bottom: 1rem;
     display: inline-block;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+    border: 2px solid white;
 }
 
 .value-arrow {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 30px rgba(233, 30, 99, 0.4);
-    border: 3px solid white;
+    box-shadow: 0 10px 30px rgba(233, 30, 99, 0.5);
+    border: 4px solid white;
+    position: relative;
+}
+
+.value-arrow::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    opacity: 0.9;
 }
 
 .value-arrow svg {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     fill: white;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    position: relative;
+    z-index: 1;
 }
 
 .value-benefits {
