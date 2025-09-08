@@ -896,6 +896,21 @@ section {
     gap: 0.2rem;
 }
 
+.star {
+    color: #ffc107;
+    font-size: 1.2rem;
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
+.star.filled {
+    color: #ffc107;
+}
+
+.star.empty {
+    color: #ddd;
+}
+
+/* Legacy support for Font Awesome stars */
 .stars i {
     color: #ffc107;
     font-size: 1.2rem;
@@ -931,6 +946,21 @@ section {
     color: var(--text-medium);
 }
 
+.icon-negative {
+    color: #dc3545;
+    width: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.icon-positive {
+    color: #28a745;
+    width: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Legacy support for Font Awesome icons */
 .rating-issues i {
     color: #dc3545;
     width: 16px;
@@ -998,9 +1028,11 @@ section {
     justify-content: center;
     margin: 0 auto 1rem;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     box-shadow: 0 8px 20px rgba(233, 30, 99, 0.3);
     transition: all 0.3s ease;
+    line-height: 1;
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
 }
 
 .impact-card:hover .impact-icon {
