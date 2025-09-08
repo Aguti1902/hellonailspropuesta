@@ -1147,7 +1147,8 @@ section {
 .value-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    background: rgba(63, 81, 181, 0.15);
+    border: 2px solid var(--secondary);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -1158,7 +1159,7 @@ section {
 .value-icon svg {
     width: 24px;
     height: 24px;
-    fill: white;
+    fill: var(--secondary);
 }
 
 .value-details {
@@ -1205,16 +1206,16 @@ section {
 
 .total-value {
     background: linear-gradient(135deg, 
-        rgba(220, 53, 69, 0.05) 0%, 
-        rgba(220, 53, 69, 0.1) 100%);
-    border: 2px solid rgba(220, 53, 69, 0.2);
+        rgba(220, 53, 69, 0.08) 0%, 
+        rgba(220, 53, 69, 0.15) 100%);
+    border: 2px solid rgba(220, 53, 69, 0.4);
 }
 
 .nexgent-offer {
     background: linear-gradient(135deg, 
-        rgba(233, 30, 99, 0.05) 0%, 
-        rgba(63, 81, 181, 0.05) 100%);
-    border: 2px solid rgba(233, 30, 99, 0.2);
+        rgba(233, 30, 99, 0.08) 0%, 
+        rgba(63, 81, 181, 0.08) 100%);
+    border: 2px solid rgba(233, 30, 99, 0.4);
 }
 
 .total-label, .offer-label {
@@ -1249,8 +1250,9 @@ section {
 
 .total-description, .offer-description {
     font-size: 0.85rem;
-    color: var(--text-medium);
+    color: var(--text-dark);
     line-height: 1.4;
+    font-weight: 500;
 }
 
 .offer-badge {
@@ -1269,12 +1271,13 @@ section {
 .value-arrow {
     width: 60px;
     height: 60px;
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 30px rgba(233, 30, 99, 0.3);
+    box-shadow: 0 10px 30px rgba(233, 30, 99, 0.4);
+    border: 3px solid white;
 }
 
 .value-arrow svg {
