@@ -978,7 +978,7 @@ section {
     height: 60px;
     background: var(--primary);
     border-radius: 50%;
-    color: white;
+    color: black;
     font-size: 1.5rem;
     box-shadow: 0 10px 30px rgba(233, 30, 99, 0.3);
 }
